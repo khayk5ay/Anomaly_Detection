@@ -13,6 +13,7 @@ There are 5 methods in the code:
 2. get_gaussian_distribution
 3. get_probabilities
 4. select_threshold
+5. predict
 
   generate_dataset: 
 
@@ -42,4 +43,9 @@ There are 5 methods in the code:
 
       best_F1 () : The F1 Score of the model
       best_epsilon () : The threshold that produced the best F1 Score
-
+  
+  predict:
+  
+    returns:
+    
+      y_pred () : The predictions of the anomaly detection algorithm for a new set of data based on the training set
