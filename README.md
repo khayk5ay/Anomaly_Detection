@@ -14,24 +14,32 @@ There are 5 methods in the code:
 3. get_probabilities
 4. select_threshold
 
-generate_dataset: 
-  returns:
-    X_train () : Randomly generated values within a specified range that are considered normal
-    X_val ()   : Randomly generated values containing values both normal and anomalous
-    y_val ()   : Labels for X_val showing the normal values [0] and anomalous values [1]
-    
+  generate_dataset: 
 
-get_gaussian_distribution:
-  returns:
-    mu () : The mean value(s) of the features in the dataset
-    var (): The variance of the features in the dataset
-    
-get_probabilities:
-  returns:
-    p_x_j () : An array of the probabilities of each observation
-    
-select_threshold:
-  returns:
-    best_F1 () : The F1 Score of the model
-    best_epsilon () : The threshold that produced the best F1 Score
-    
+    returns:
+
+      X_train () : Randomly generated values within a specified range that are considered normal
+      X_val ()   : Randomly generated values containing values both normal and anomalous
+      y_val ()   : Labels for X_val showing the normal values [0] and anomalous values [1]
+
+
+  get_gaussian_distribution:
+
+    returns:
+
+      mu () : The mean value(s) of the features in the dataset
+      var (): The variance of the features in the dataset
+
+  get_probabilities:
+
+    returns:
+
+      p_x_j () : An array of the probabilities of each observation
+
+  select_threshold:
+  
+    returns:
+
+      best_F1 () : The F1 Score of the model
+      best_epsilon () : The threshold that produced the best F1 Score
+
